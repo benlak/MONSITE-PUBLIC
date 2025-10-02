@@ -3,28 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>À propos - Mon Mini-Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<script>
-  // Récupère tous les liens du menu
-  const links = document.querySelectorAll('nav a');
-
-  // Parcours chaque lien
-  links.forEach(link => {
-    // Si le href du lien correspond à la page actuelle
-    if(link.getAttribute('href') === window.location.pathname.split('/').pop()) {
-      link.classList.add('active'); // ajoute la classe 'active'
-    }
-  });
-</script>
-
 <body>
   <header>
     <h1>À propos de moi</h1>
-<nav>
-  <a href="index.html" >Accueil</a>
-  <a href="about.html" class="active">À propos</a>
-</nav>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+    </nav>
   </header>
 
   <main>
@@ -38,5 +26,14 @@
   <footer>
     <p>&copy; 2025 Benoit Nieuborg</p>
   </footer>
+
+  <script>
+    const links = document.querySelectorAll('nav a');
+    links.forEach(link => {
+      if(link.getAttribute('href') === window.location.pathname.split('/').pop()) {
+        link.classList.add('active');
+      }
+    });
+  </script>
 </body>
 </html>
