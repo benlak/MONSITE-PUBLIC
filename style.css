@@ -9,16 +9,29 @@ letter-spacing: 1px;
 }
 
 header {
-  background-color: #4CAF50;
+  background-color: #333333;
   color: white;
-  padding: 0px;
+  padding: 50px;
   text-align: center;
 }
 
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #FFD700; /* couleur dorée pour se démarquer */
+}
+
+
+
 nav a {
-  color: red;
-  margin: 0 10px;
-  text-decoration: none;
+ color: white;
+font-family: "League Spartan";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+text-decoration: none;
 }
 
 main {
@@ -27,21 +40,24 @@ main {
 
 section {
   margin-bottom: 20px;
-  background-color: white;
-  padding: 150px;
+  background-color: yellow;
+  padding: 30px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 img {
-  max-width: 100%;
+  max-width: auto;
   height: auto;
-  border-radius: 8px;
+  border-radius: 300px;
+
+
+
 }
 
 footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 0px;
+  padding: 20px;
 }
